@@ -6,8 +6,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 public class GameLevel extends AppCompatActivity {
 
@@ -31,6 +34,21 @@ public class GameLevel extends AppCompatActivity {
                 }
             }
         });
+
+        //кнопка для 1го уровня
+        TextView textView1 = (TextView) findViewById(R.id.textView1);
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(GameLevel.this, Level1.class);
+                    startActivity(intent); finish();
+                } catch (Exception e) {
+
+                }
+            }
+        });
+ // конец работы кнопки 1го уровня
     }
 
     //работа системной конпоки назад
