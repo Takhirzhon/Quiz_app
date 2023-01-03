@@ -135,11 +135,23 @@
                     android:background="@drawable/style_points" />
             </LinearLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
+
+            android:orientation="vertical"
+            >
+
             <LinearLayout
                 android:id="@+id/line3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -167,7 +179,7 @@
             <LinearLayout
                 android:id="@+id/line4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
@@ -180,6 +192,7 @@
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/testimg" />
+
                 <ImageView
                     android:id="@+id/img_bottom1"
                     android:layout_width="match_parent"
