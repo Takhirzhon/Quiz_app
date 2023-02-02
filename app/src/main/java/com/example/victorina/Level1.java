@@ -9,6 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Level1 extends AppCompatActivity {
 
@@ -16,6 +17,10 @@ public class Level1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+        //Создал переменную text_level
+        TextView text_levels = findViewById(R.id.text_levels);
+        text_levels.setText(R.string.level1); //Установил текст
 
         //код который скругляет углы ImageView for questions  - НАЧАЛО
         final ImageView img_left = (ImageView) findViewById(R.id.img_left);
