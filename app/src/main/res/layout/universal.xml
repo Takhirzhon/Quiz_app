@@ -172,7 +172,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/testimg" />
+                    app:srcCompat="@drawable/testimg"
+                    android:onClick="checkAnswer"/>
+                />
 
                 <ImageView
                     android:id="@+id/img_left1"
@@ -182,7 +184,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/testimg" />
+                    app:srcCompat="@drawable/testimg"
+                    android:onClick="checkAnswer"/>
+                />
 
             </LinearLayout>
 
@@ -201,7 +205,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/testimg" />
+                    app:srcCompat="@drawable/testimg"
+                    android:onClick="checkAnswer"/>
+                />
 
                 <ImageView
                     android:id="@+id/img_bottom1"
@@ -211,7 +217,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/style_img_universal"
                     android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/testimg" />
+                    app:srcCompat="@drawable/testimg"
+                    android:onClick="checkAnswer"/>
+                />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
