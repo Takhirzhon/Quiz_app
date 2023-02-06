@@ -9,4 +9,6 @@ public class Array {
             R.drawable.washington_level1,
     };
     //Массив для певрого уровня КОНЕЦ
+
+
 }
