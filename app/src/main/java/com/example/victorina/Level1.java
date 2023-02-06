@@ -10,13 +10,23 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Level1 extends AppCompatActivity {
+
+    public int num1 = 0;
+    public int num2 = 1;
+    public int num3 = 2;
+    public int num4 = 3;
+    public Array array = new Array();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
+
+
 
         //Создал переменную text_level
         TextView text_levels = findViewById(R.id.text_levels);
@@ -62,7 +72,14 @@ public class Level1 extends AppCompatActivity {
             }
         });
         //Кнопка Назад Конец
+
+        img_left.setImageResource(array.images1[num1]);// достаем из массива картинку
+        img_left1.setImageResource(array.images1[num2]);// достаем из массива картинку
+        img_bottom.setImageResource(array.images1[num3]);// достаем из массива картинку
+        img_bottom1.setImageResource(array.images1[num4]);// достаем из массива картинку
+// достаем из массива картинку
     }
+
     //Системная кнопка Назад Начало
     @Override
     public void onBackPressed() {
