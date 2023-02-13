@@ -33,22 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 }
         });
 
+
         Window bar = getWindow();
         bar.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
-
-
-
-
-    public void checkAnswer(View view) {
-        ImageView imageView = (ImageView) view;
-        int id = imageView.getId();
-
-        if (id == R.id.img_left1) {
-            Toast.makeText(this, "Right answer!", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Wrong answer!", Toast.LENGTH_SHORT).show();
-        }
     }
 
 
@@ -67,5 +54,6 @@ public class MainActivity extends AppCompatActivity {
         backPressedTime = System.currentTimeMillis();
     }
     //системная кнопка для выхода(конец кода)
+
 
 }
