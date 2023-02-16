@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private  long backPressedTime;
+    private long backPressedTime;
     private Toast backToast;
 
     @Override
@@ -25,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         start.setOnClickListener((v) -> {
-                try {
-                    Intent intent = new Intent(MainActivity.this, GameLevel.class);
-                    startActivity(intent); finish();
-                } catch (Exception e) {
+            try {
+                Intent intent = new Intent(MainActivity.this, GameLevel.class);
+                startActivity(intent);
+                finish();
+            } catch (Exception e) {
 
-                }
+            }
         });
 
 
@@ -38,11 +40,10 @@ public class MainActivity extends AppCompatActivity {
         bar.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
-
     //системная кнопка для выхода
     @Override
-    public void onBackPressed(){
-        if(backPressedTime + 2000 > System.currentTimeMillis()) {
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
             backToast.cancel();
             super.onBackPressed();
             return;
